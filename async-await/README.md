@@ -11,7 +11,7 @@ yarn add @babel/cli @babel/core @babel/plugin-transform-async-to-generator @babe
 {
   "name": "async-await",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/index.js",
   "license": "MIT",
   "scripts": {
     "build": "./node_modules/.bin/babel --version && ./node_modules/.bin/babel src -d lib",
