@@ -23,7 +23,7 @@ const main = async () => {
   // files and directories
   const all = await fs.readdirSync(dir)
   // files only
-  const files = all.filter(f => fs.statSync(f).isFile())
+  const files = all.map(f => `${__dirname}/${f}`).filter(f => fs.statSync(f).isFile())
 
   files.forEach(f => {
     processFileLineByLine(f, handleLine)
