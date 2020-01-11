@@ -58,7 +58,9 @@ yarn add @babel/cli @babel/core @babel/plugin-transform-async-to-generator @babe
 
 # Usage
 
-```
+- Build and run [source code](https://github.com/tools-utils/tutorials/tree/master/async-await)
+
+```sh
 npm run build && npm start
 # or
 yarn build && yarn start
