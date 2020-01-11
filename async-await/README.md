@@ -1,7 +1,12 @@
 # Introduction
 This is a project template that enable using `async/await` in Node.
 
-# Install dev dependencies
+# Objectives
+
+- Define dependencies in `package.json`
+- Configure `.babelrc`
+
+# Install
 
 ```sh
 npm i @babel/cli @babel/core @babel/plugin-transform-async-to-generator @babel/preset-env --dev-save
@@ -30,7 +35,7 @@ yarn add @babel/cli @babel/core @babel/plugin-transform-async-to-generator @babe
 }
 ```
 
-# Babel configuration
+# Babel
 
 - `.babelrc`
 
@@ -60,3 +65,6 @@ yarn build && yarn start
 
 # async/await in node with babel...
 ```
+
+# References
+- [plugin-transform-async-to-generator](https://babeljs.io/docs/en/babel-plugin-transform-async-to-generator)

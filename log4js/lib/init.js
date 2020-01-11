@@ -25,10 +25,7 @@ function _default() {
         maxLogSize: 10240,
         backups: 3,
         keepFileExt: true,
-        compress: false,
-        layout: {
-          type: 'messagePassThrough'
-        }
+        compress: false
       },
       datefile: {
         type: 'dateFile',
