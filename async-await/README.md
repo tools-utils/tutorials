@@ -47,8 +47,7 @@ yarn add @babel/cli @babel/core @babel/plugin-transform-async-to-generator @babe
     {
       "targets": {
           "node": "current"
-      },
-      "modules": "cjs"
+      }
     }
     ]
   ],
