@@ -28,8 +28,9 @@ const targetFileName = (source, basedir) => {
   const year = date.getFullYear()
   const dir = `${year}-${padZero}${month}-${day}`
 
+  const fname = path.basename(source)
   // 2020-01-11/access.log
-  const target = `${basedir}/${dir}/${source}`
+  const target = `${basedir}/${dir}/${fname}`
   return target
 }
 ```

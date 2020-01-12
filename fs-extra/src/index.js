@@ -1,7 +1,8 @@
 import fs from 'fs-extra'
+import path from 'path'
 
 const move = (source, target) => {
-  console.log(`Start moving ${source} to ${target}`)
+  console.log(`Start moving ${fname} to ${target}`)
   try {
     fs.moveSync(source, target, { override: true })
   } catch(e) {
@@ -20,8 +21,9 @@ const targetFileName = (source, basedir) => {
   const year = date.getFullYear()
   const dir = `${year}-${padZero}${month}-${day}`
 
+  const fname = path.basename(source)
   // 2020-01-11/access.log
-  const target = `${basedir}/${dir}/${source}`
+  const target = `${basedir}/${dir}/${fname}`
   return target
 }
 
