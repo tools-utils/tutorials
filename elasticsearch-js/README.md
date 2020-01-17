@@ -10,7 +10,7 @@ In this project we try setup a local `elasticsearch server` and index documents 
 
 # Implementation
 
-- Start `elasticsearch server` locally
+- Use [docker-compose] (https://github.com/tools-utils/tutorials/tree/master/elasticsearch-js/docker-compose.yml) to start `elasticsearch server` locally
 
 ```sh
 npm install @elastic/elasticsearch --save
@@ -142,6 +142,18 @@ const prefix = async () => {
 
   console.log(body.hits.hits)
 }
+```
+
+# cURL
+
+```sh
+# count
+curl -X GET "localhost:9200/test/_count?q=city:NC&pretty"
+```
+
+```sh
+# delete index
+curl -X DELETE "localhost:9200/test?pretty"
 ```
 
 # References
