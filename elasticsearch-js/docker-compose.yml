@@ -1,0 +1,17 @@
+version: '3'
+services:
+  es:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.5.1
+    container_name: es
+    ports:
+      - 9200:9200
+      - 9300:9300
+    volumes:
+      - ./data:/elasticsearch_data
+      - /tmp/elasticsearch:/tmp/elasticsearch
+    restart: always
+    environment:
+      - node.name=es1
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+
