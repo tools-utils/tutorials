@@ -1,6 +1,6 @@
 {
 	"content": [
 		"{{{ name }}}",
-		"{{{ address }}}"
+		"{{{ desc }}}"
 	]
 }
